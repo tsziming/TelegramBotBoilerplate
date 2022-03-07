@@ -83,7 +83,16 @@ You can perform some complex configurations using [built-in scripts](/Scripts/RE
 
 ## 📕 Guides
 
-> Coming soon...
+> Common
+
+- [Installation Guide](/Docs/wiki/installation-guide)
+- [How to use sessions?](/Docs/wiki/how-to-use-sessions)
+- [How to create a custom listener?](/Docs/wiki/how-to-create-a-custom-listener)
+
+> About commands
+
+- [How to create a command?](/Docs/wiki/how-to-create-a-command)
+- [How to use command argument parser?](/Docs/wiki/how-to-use-command-argument-parser)
 
 ## 📝 Roadmap
 
