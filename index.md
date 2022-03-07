@@ -85,14 +85,14 @@ You can perform some complex configurations using [built-in scripts](/Scripts/RE
 
 > Common
 
-- [Installation Guide](/Docs/wiki/installation-guide)
-- [How to use sessions?](/Docs/wiki/how-to-use-sessions)
-- [How to create a custom listener?](/Docs/wiki/how-to-create-a-custom-listener)
+- [Installation Guide](/TelegramBotBoilerplate/Docs/wiki/installation-guide)
+- [How to use sessions?](/TelegramBotBoilerplate/Docs/wiki/how-to-use-sessions)
+- [How to create a custom listener?](/TelegramBotBoilerplate/Docs/wiki/how-to-create-a-custom-listener)
 
 > About commands
 
-- [How to create a command?](/Docs/wiki/how-to-create-a-command)
-- [How to use command argument parser?](/Docs/wiki/how-to-use-command-argument-parser)
+- [How to create a command?](/TelegramBotBoilerplate/Docs/wiki/how-to-create-a-command)
+- [How to use command argument parser?](/TelegramBotBoilerplate/Docs/wiki/how-to-use-command-argument-parser)
 
 ## 📝 Roadmap
 
