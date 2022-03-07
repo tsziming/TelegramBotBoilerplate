@@ -4,7 +4,7 @@ In TelegramBotBoilerplate commands are the classes that inherited from `Command`
 
 Command is a `Listener` child, so it is also stored in "Listeners" folder:
 
-![Folder structure](https://github.com/tsziming/TelegramBotBoilerplate/blob/master/Docs/wiki/listeners-folder-structure.png)
+![Folder structure](/Docs/wiki/listeners-folder-structure.png)
 
 ## Step-by-step Guide
 
