@@ -2,7 +2,7 @@
 
 Command arguments are the text parts that the user passes with a command:
 
-![Command example](https://github.com/tsziming/TelegramBotBoilerplate/blob/master/Docs/wiki/command-example.png)
+![Command example](/TelegramBotBoilerplate/Docs/wiki/command-example.png)
 
 In TelegramBotBoilerplate command argument parsing is built-in with simple utility.
 
