@@ -4,7 +4,7 @@ In TelegramBoilerplate custom listeners are inherited from `Listener` type.
 
 Listeners are stored in "Listeners" folder:
 
-![Folder structure](https://github.com/tsziming/TelegramBotBoilerplate/blob/master/Docs/wiki/listeners-folder-structure.png)
+![Folder structure](/TelegramBotBoilerplate/Docs/wiki/listeners-folder-structure.png)
 
 ## Step-by-step Guide
 
