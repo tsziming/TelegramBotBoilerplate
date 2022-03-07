@@ -1,6 +1,6 @@
 # Telegram Bot Boilerplate
 
-![Boilerplate preview](Docs/Preview.jpg)
+![Boilerplate preview](/Docs/Preview.jpg)
 
 Flexible, session-based and documentated console telegram bot template (boilerplate) that works on [Telegram.Bot](https://github.com/TelegramBots/Telegram.Bot) and [Entity Framework Core](https://docs.microsoft.com/ef/).
 
