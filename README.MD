@@ -84,7 +84,18 @@ You can perform some complex configurations using [built-in scripts](/Scripts/RE
 
 ## 📕 Guides
 
-> Coming soon...
+> Common
+
+- [Installation Guide](https://github.com/tsziming/TelegramBotBoilerplate/wiki/Installation-Guide)
+- [How to use sessions?](https://github.com/tsziming/TelegramBotBoilerplate/wiki/How-to-use-sessions%3F)
+- [How to create a custom listener?](https://github.com/tsziming/TelegramBotBoilerplate/wiki/How-to-create-a-custom-listener%3F)
+
+> About commands
+
+- [How to create a command?](https://github.com/tsziming/TelegramBotBoilerplate/wiki/How-to-create-a-command%3F)
+- [How to use command argument parser?](https://github.com/tsziming/TelegramBotBoilerplate/wiki/How-to-use-command-argument-parser%3F)
+
+
 
 ## 📝 Roadmap
 
