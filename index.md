@@ -1,37 +1,100 @@
-## Welcome to GitHub Pages
+# Telegram Bot Boilerplate
 
-You can use the [editor on GitHub](https://github.com/tsziming/TelegramBotBoilerplate/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![Boilerplate preview](Docs/Preview.jpg)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Flexible, session-based and documentated console telegram bot template (boilerplate) that works on [Telegram.Bot](https://github.com/TelegramBots/Telegram.Bot) and [Entity Framework Core](https://docs.microsoft.com/ef/).
 
-### Markdown
+*Inspired by [grammy](https://grammy.dev/) and [telegraf](https://telegraf.js.org/)*
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+> #StandWithUkraine
 
-```markdown
-Syntax highlighted code block
+## ⭐️ Features
 
-# Header 1
-## Header 2
-### Header 3
+- [x] session storage
+- [x] complex listener & command management with validators
+- [x] unit tests
+- [x] built-in command argument parser
+- [x] all popular databases supported *(Sqlite, MySQL, PostgreSQL, SqlServer)*
+- [x] python scripts for better user experience
 
-- Bulleted
-- List
+## 👀 Overview
 
-1. Numbered
-2. List
+Overrided Run() method should return the string that will be automatically sent to telegram user as a response.
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```C#
+    public class StartCommand : Command {
+        public StartCommand(Bot bot): base(bot) {
+            Names = new string[]{"/start", "/starting", "!start"};
+        }
+        public override string Run(Context context, CancellationToken cancellationToken)
+        {
+            return "Welcome! Press /help to see my functions.";
+        }
+    }
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+If the command takes some arguments, built-in argument parser will help validate and parse these arguments:
 
-### Jekyll Themes
+```C#
+    public class EchoCommand : Command {
+        public EchoCommand(Bot bot): base(bot) {
+            Names = new string[]{"/echo", "!echo"};
+        }
+        public override string Run(Context context, CancellationToken cancellationToken)
+        {
+            var message = context.Update.Message;
+            if (ArgumentParser.Validate(message.Text)) {
+                var args = ArgumentParser.Parse(message.Text);
+                return args.ArgumentsText;
+            }
+            return "No arguments provided.";
+        }
+    }
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tsziming/TelegramBotBoilerplate/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Example with all messages listener and session storage:
 
-### Support or Contact
+```C#
+    public class MessageListener : Listener
+    {
+        public MessageListener(Bot bot):base(bot) {}
+        public override bool Validate(Context context, CancellationToken cancellationToken)
+        {
+            if (context.Update.Type != UpdateType.Message)
+                return false;
+            return true;
+        }
+        public override async Task Handler(Context context, CancellationToken cancellationToken)
+        {
+            var session = await GetSession(context.Update.Message);
+            session.Messages++;
+            await SaveChanges();
+        }
+    }
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## 🚩 Getting started
+
+To use this boilerplate you need to install it via [Installation Guide](/Docs/installation.md)
+
+## 🔧 Scripts
+
+You can perform some complex configurations using [built-in scripts](/Scripts/README.MD).
+
+## 📕 Guides
+
+> Coming soon...
+
+## 📝 Roadmap
+
+- [x] Command arguments parser
+- [ ] Use DI Framework for listener & command management
+- [ ] Implement types for `Callback` and `Keyboard` Menus
+- [ ] Generic `Context` with facade methods for basic responses
+- [ ] Add i18n (bot internationalization) features
+- [ ] Add webhook support
+- [ ] Docker Containerization
+
+## License
+
+MIT - Made by [tsziming](https://github.com/tsziming)
