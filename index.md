@@ -75,17 +75,14 @@ Example with all messages listener and session storage:
 
 ## 🚩 Getting started
 
-To use this boilerplate you need to install it via [Installation Guide](/Docs/installation.md)
-
-## 🔧 Scripts
-
-You can perform some complex configurations using [built-in scripts](/Scripts/README.MD).
+To use this boilerplate you need to install it via [Installation Guide](/Docs/wiki/installation-guide)
 
 ## 📕 Guides
 
 > Common
 
 - [Installation Guide](/TelegramBotBoilerplate/Docs/wiki/installation-guide)
+- [Scripts Guide](/TelegramBotBoilerplate/Docs/wiki/scripts-guide)
 - [How to use sessions?](/TelegramBotBoilerplate/Docs/wiki/how-to-use-sessions)
 - [How to create a custom listener?](/TelegramBotBoilerplate/Docs/wiki/how-to-create-a-custom-listener)
 
