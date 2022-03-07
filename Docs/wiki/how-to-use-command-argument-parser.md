@@ -1,10 +1,12 @@
+# How to use command argument parser?
+
 Command arguments are the text parts that the user passes with a command:
 
 ![Command example](https://github.com/tsziming/TelegramBotBoilerplate/blob/master/Docs/wiki/command-example.png)
 
 In TelegramBotBoilerplate command argument parsing is built-in with simple utility.
 
-# Step-by-step Guide
+## Step-by-step Guide
 
 1. Find `Run()` method in the command that you want to enhance with arguments:
 
