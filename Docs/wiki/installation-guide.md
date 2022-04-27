@@ -32,7 +32,7 @@
 2. Clone repository to the place you want:
 
     ```bash
-    git clone https://github.com/tsziming/telegram-bot-boilerplate.git
+    git clone https://github.com/tsziming/TelegramBotBoilerplate.git
     ```
 
 3. Run "Scripts/setup.py" file and follow the instructions:
@@ -48,7 +48,7 @@
 2. Clone repository to the place you want:
 
     ```bash
-    git clone https://github.com/tsziming/telegram-bot-boilerplate.git
+    git clone https://github.com/tsziming/TelegramBotBoilerplate.git
     ```
 
 3. Open *cmd* / *your IDE with cmd* in the project folder.  
